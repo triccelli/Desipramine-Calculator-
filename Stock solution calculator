@@ -1,0 +1,15 @@
+#This is my first script!!!!!  
+#for personal use 
+
+###STOCK SOLUTION CALCULATOR###
+#For preparing _____ mL of desipramine solution at _____ mg/mL concentration. 
+
+vol_stock = float(input("What volume(mL) of desipramine would you like to make?"))
+concentration_stock = float(input("What concentration(mg/mL) of despiramine would you like to make?"))
+
+#MW of desipramine HCL: 302.84. MW of HCL: 36.46. MW of free base = 266.38 
+#correction factor = 302.84/266.38 = 1.137 
+correction = 1.137
+
+mg_stock = concentration_stock * vol_stock * correction 
+print ("To obtain concentration(mg/mL) of " + str(concentration_stock) + " in a volume(mL) of " + str(vol_stock) + " use " + str(mg_stock) + " mg ")
